@@ -1121,11 +1121,13 @@ function World11(map) {
       greeter += "</div>";
       greeter += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:350px;height:35px;'>&copy;1985 NINTENDO</div>";
       greeter += "<p id='explanation' style='text-align:center;<!--/*text-shadow:2px 2px 1px black;*/-->margin-left:7px;'>";
-      greeter += "  Move: Arrows/WASD";
+      greeter += "  Bewegen: Pfeiltasten oder WASD";
       greeter += "  <br>";
-      greeter += "  Fire/Sprint: Shift/CTRL";
+      greeter += "  Feuern/Sprint: Shift oder CTRL";
       greeter += "  <br>";
-      greeter += "  Pause/Mute: P/M ";
+      greeter += "  Pause: rechte Maustaste";
+      greeter += "  <br>";
+      greeter += "  Musik On/Off: M";
       // greeter += "  <br>";
       // greeter += "  TOP- " + (localStorage.highscore || "000000");
       greeter += "</p>";
@@ -1361,13 +1363,6 @@ function WorldRandomCastle(map) {
   map.respawndist = 35;
   randMapType(map);
 }
-
-console.log("This is an offline copy of Full Screen Mario, intended for private testing.",
-            "Normally, maps are loaded over-eagerly via AJAX requests; for the sake of offline use,",
-            "they have all been copied to the bottom of maps.js instead.",
-            "If you wish to make changes to a map, change both maps.js::WorldXY(map) and Maps/WorldXY.js",
-            "\n",
-            "To use Full Screen Mario normally, delete this log message and all functions after it in maps.js.");
 
 function World12(map) {
   map.locs = [
