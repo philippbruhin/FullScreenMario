@@ -70,7 +70,7 @@ function ensureLocalStorage() {
     ls_ok = false;
   }
   if(!ls_ok) {
-    var nope = document.body.innerText = "It seems your browser does not allow localStorage!";
+    var nope = document.body.innerText = "Leider lässt dein Browser kein localStorage zu. Verende Firefox oder den Google Chrome Browser, dann klappt es :-)";
     throw nope;
   }
 }
